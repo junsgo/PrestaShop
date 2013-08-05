@@ -361,6 +361,8 @@ class HookCore extends ObjectModel
 		{
 			$retro_hook_name = Hook::getRetroHookName($hook_name);
 			$hook_name = strtolower($hook_name);
+			//FIX: Upper character
+			$retro_hook_name = strtolower($retro_hook_name);
 
 			$return = array();
 			$inserted_modules = array();
